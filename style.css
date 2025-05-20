@@ -63,3 +63,14 @@ footer {
     padding: 30px 10px;
     margin-top: 40px;
 }
+.mission-liste {
+  text-align: left;
+  max-width: 700px;
+  margin: 0 auto 30px;
+  padding-left: 20px;
+}
+
+.mission-liste li {
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
