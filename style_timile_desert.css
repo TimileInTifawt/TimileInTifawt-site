@@ -61,3 +61,34 @@ footer {
     bottom: 0;
     width: 100%;
 }
+.hero {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Sahara_dune.jpg/1280px-Sahara_dune.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.contenu-hero h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+
+.contenu-hero p {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+.bouton {
+  background-color: #e1a95f;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.bouton:hover {
+  background-color: #d08835;
+}
