@@ -1,68 +1,54 @@
-
+/* Style général */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4e9db;
-    color: #3e2f1c;
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4e7d3;
+  color: #2c2c2c;
+  line-height: 1.6;
 }
 
+/* En-tête (header) */
 header {
-    background: linear-gradient(to right, #b4845f, #d6a77a);
-    padding: 20px;
-    text-align: center;
-    color: white;
+  background-color: #9c6b30;
+  padding: 20px;
+  text-align: center;
 }
 
-header img {
-    width: 80px;
-    height: auto;
-    border-radius: 50%;
+.logo img {
+  max-width: 150px;
 }
 
+/* Barre de navigation */
 nav {
-    margin-top: 10px;
+  background-color: #c08b4d;
+  text-align: center;
+  padding: 10px 0;
 }
 
 nav ul {
-    list-style-type: none;
-    padding: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 nav ul li {
-    display: inline;
-    margin: 0 15px;
+  display: inline-block;
+  margin: 0 15px;
 }
 
 nav ul li a {
-    text-decoration: none;
-    color: #ffffff;
-    font-weight: bold;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 nav ul li a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
-section {
-    padding: 30px;
-}
-
-h1, h2 {
-    color: #a0522d;
-}
-
-footer {
-    background-color: #3e2f1c;
-    color: white;
-    text-align: center;
-    padding: 15px;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
+/* Section d'accueil (hero) */
 .hero {
-  background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Sahara_dune.jpg/1280px-Sahara_dune.jpg');
+  background-image: url('https://images.unsplash.com/photo-1587049352843-28c707a21449');
   background-size: cover;
   background-position: center;
   color: white;
@@ -70,25 +56,37 @@ footer {
   padding: 100px 20px;
 }
 
-.contenu-hero h1 {
-  font-size: 3em;
-  margin-bottom: 10px;
-}
-
-.contenu-hero p {
-  font-size: 1.5em;
+.hero h1 {
+  font-size: 2.5em;
   margin-bottom: 20px;
 }
 
-.bouton {
-  background-color: #e1a95f;
-  color: white;
-  padding: 10px 20px;
-  text-decoration: none;
-  border-radius: 5px;
-  font-weight: bold;
+.hero p {
+  font-size: 1.2em;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
-.bouton:hover {
-  background-color: #d08835;
+/* Sections standards */
+section {
+  padding: 50px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+section h2 {
+  font-size: 2em;
+  color: #9c6b30;
+  margin-bottom: 20px;
+}
+
+/* Pied de page (footer) */
+footer {
+  background-color: #9c6b30;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
 }
