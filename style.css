@@ -14,7 +14,7 @@ body {
 
 /* Conteneur général (header, section, nav) avec fond transparent */
 header, section, nav {
-  background-color: rgba(255, 255, 255, 0.6); /* Opacité réduite */
+  background-color: rgba(255, 255, 255, 0.4); /* Opacité réduite */
   padding: 20px;
   border-radius: 12px;
   margin: 20px;
