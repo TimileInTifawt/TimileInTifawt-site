@@ -1,96 +1,130 @@
 body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Georgia', serif;
-    background-image: url('desert.png');
-    background-size: cover;
-    background-position: center;
-    color: #fbe8b3;
-    text-align: center;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  background-color: #2b1a0f;
+  color: #f3e0b5;
 }
 
-nav ul {
+nav {
+  background-color: #391f0f;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  flex-wrap: wrap;
+}
+
+.logo-nav img {
+  height: 50px;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  margin: 10px;
+}
+
+.menu li a {
+  color: #f3e0b5;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 2em;
+  cursor: pointer;
+  color: #f3e0b5;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    background-color: #391f0f;
+  }
+  #menu-toggle:checked + .menu-icon + .menu {
     display: flex;
-    justify-content: center;
-    list-style: none;
-    padding: 20px;
-    background: rgba(0, 0, 0, 0.4);
-    margin: 0;
-}
-
-nav ul li {
-    margin: 0 15px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #fbe8b3;
-    font-weight: bold;
-    font-size: 16px;
-}
-
-header {
-    padding: 40px 0 0 0;
-}
-
-.logo {
-    width: 180px;
-}
-
-h1 {
-    font-size: 48px;
-    margin: 10px 0;
+  }
+  .menu li {
+    text-align: center;
+    width: 100%;
+  }
+  .logo-nav {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .menu-icon {
+    display: block;
+  }
 }
 
 .mission {
-    background: rgba(0, 0, 0, 0.5);
-    padding: 40px;
-    margin: 40px auto;
-    max-width: 800px;
-    border-radius: 15px;
+  text-align: center;
+  padding: 40px 20px;
+  background: url('background-desert.jpg') no-repeat center center;
+  background-size: cover;
 }
 
-h2 {
-    font-size: 32px;
-    color: #fbe8b3;
+.mission h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #f3e0b5;
 }
 
-.mission p, .mission ul {
-    font-size: 18px;
-    line-height: 1.6;
-    text-align: left;
-    margin: 0 auto;
-    max-width: 700px;
+.mission .intro {
+  font-style: italic;
+  margin-bottom: 20px;
 }
 
-ul {
-    padding-left: 0;
+.mission ul {
+  text-align: left;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0;
 }
 
-.mission li {
-    list-style: none;
-    padding: 8px 0;
+.mission ul li {
+  margin: 10px 0;
+  padding-left: 20px;
+  position: relative;
 }
 
-.chameau img {
-    margin: 40px auto 20px;
-    display: block;
-    width: 60px;
+.mission ul li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #f3e0b5;
 }
 
-.social-footer {
-    display: flex;
-    justify-content: center;
-    padding-bottom: 40px;
-    gap: 20px;
+.camel {
+  margin-top: 30px;
+  max-width: 100px;
 }
 
-.social-footer img {
-    width: 40px;
-    height: 40px;
-    transition: transform 0.3s ease;
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #391f0f;
 }
 
-.social-footer img:hover {
-    transform: scale(1.2);
+footer .social img {
+  width: 40px;
+  margin: 0 10px;
+  vertical-align: middle;
 }
