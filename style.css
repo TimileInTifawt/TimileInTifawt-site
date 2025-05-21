@@ -1,6 +1,7 @@
 body {
-  margin: 0;
   font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
   background-image: url('background_tifawt.png');
   background-size: cover;
   background-position: center;
@@ -10,11 +11,10 @@ body {
 }
 
 header, section, nav {
-  background-color: rgba(255, 255, 255, 0.88);
+  background-color: rgba(255, 255, 255, 0.85);
   padding: 20px;
   border-radius: 10px;
-  margin: 20px auto;
-  max-width: 900px;
+  margin: 20px;
 }
 
 nav ul {
@@ -35,34 +35,37 @@ nav ul li a {
 }
 
 .hero-logo {
-  width: 250px;
-  margin: 20px auto;
   display: block;
+  margin: 20px auto;
+  width: 200px;
+}
+
+.mission {
+  text-align: center;
+  padding: 40px 20px;
 }
 
 .mission h2 {
   font-size: 28px;
+  color: #3b2e1c;
   margin-bottom: 20px;
-  text-transform: uppercase;
 }
 
 .custom-list {
   list-style: none;
-  padding-left: 0;
+  padding: 0;
   text-align: left;
-  max-width: 600px;
+  max-width: 700px;
   margin: 0 auto 30px;
 }
 
-.custom-list li::before {
-  content: "✓ ";
-  color: #c4732c;
-  margin-right: 8px;
+.custom-list li {
+  margin-bottom: 10px;
+  line-height: 1.5;
 }
 
 .buttons {
   margin-top: 20px;
-  text-align: center;
 }
 
 .buttons a {
