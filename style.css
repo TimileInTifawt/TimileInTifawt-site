@@ -115,3 +115,29 @@ footer {
   margin-bottom: 10px;
   line-height: 1.5;
 }
+
+a.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  margin: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+a.btn.orange {
+  background-color: #e67e22;
+  color: white;
+}
+
+a.btn.brown {
+  background-color: #5d4037;
+  color: white;
+}
+
+a.btn:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
