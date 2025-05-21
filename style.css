@@ -1,28 +1,26 @@
-
 body {
+  margin: 0;
+  font-family: Arial, sans-serif;
   background-image: url('background_tifawt.png');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  color: white;
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  text-align: center;
+  color: #3b2e1c;
 }
 
-section, header, nav {
-  background-color: rgba(255, 255, 255, 0.85);
+header, section, nav {
+  background-color: rgba(255, 255, 255, 0.88);
   padding: 20px;
   border-radius: 10px;
-  color: #3b2e1c;
+  margin: 20px auto;
+  max-width: 900px;
 }
 
 nav ul {
   list-style: none;
   padding: 0;
-  margin: 0;
+  text-align: center;
 }
 
 nav ul li {
@@ -44,46 +42,43 @@ nav ul li a {
 
 .mission h2 {
   font-size: 28px;
-  color: #3b2e1c;
   margin-bottom: 20px;
   text-transform: uppercase;
 }
 
-.mission-liste {
+.custom-list {
+  list-style: none;
+  padding-left: 0;
   text-align: left;
-  max-width: 700px;
+  max-width: 600px;
   margin: 0 auto 30px;
-  padding-left: 20px;
-  color: #3b2e1c;
 }
 
-.mission-liste li {
-  margin-bottom: 10px;
-  line-height: 1.5;
+.custom-list li::before {
+  content: "✓ ";
+  color: #c4732c;
+  margin-right: 8px;
 }
 
-a.btn {
-  display: inline-block;
-  padding: 12px 24px;
-  margin: 10px;
+.buttons {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.buttons a {
   text-decoration: none;
-  font-weight: bold;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-  transition: transform 0.2s, background-color 0.2s;
+  padding: 10px 20px;
+  margin: 5px;
+  display: inline-block;
+  border-radius: 5px;
 }
 
-a.btn.orange {
-  background-color: #e67e22;
+.btn.orange {
+  background-color: #e67928;
   color: white;
 }
 
-a.btn.brown {
-  background-color: #5d4037;
+.btn.brown {
+  background-color: #5a3d2b;
   color: white;
-}
-
-a.btn:hover {
-  transform: scale(1.05);
-  opacity: 0.9;
 }
