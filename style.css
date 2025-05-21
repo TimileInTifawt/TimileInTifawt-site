@@ -1,116 +1,59 @@
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap');
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Timile In Tifawt</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
 
-body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Cinzel', serif;
-  background-image: url('background_tifawt.png');
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  color: #f9f3e5;
-}
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#">ACCUEIL</a></li>
+        <li><a href="#">À PROPOS</a></li>
+        <li><a href="#">NOS ACTIONS</a></li>
+        <li><a href="#">ACTUALITÉS</a></li>
+        <li><a href="#">FAIRE UN DON</a></li>
+        <li><a href="#">DEVENIR BÉNÉVOLE</a></li>
+      </ul>
+    </nav>
+    <img src="logo_timile.png" alt="Timile In Tifawt" class="hero-logo">
+  </header>
 
-header, nav, section {
-  background: rgba(0, 0, 0, 0.6);
-  margin: 20px auto;
-  padding: 20px;
-  border-radius: 12px;
-  max-width: 1000px;
-  text-align: center;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
-}
+  <section class="mission">
+    <h2>NOTRE MISSION</h2>
+    <p>
+      Timile In Tifawt est une association humanitaire engagée en faveur des populations de l’Azawad, notamment dans la région de Tinzaouaten, ainsi que dans les camps situés à proximité de la frontière algérienne.
+    </p>
+    <p>
+      Nous agissons pour améliorer les conditions de vie des familles à travers des projets concrets et solidaires :
+    </p>
+    <ul class="custom-list">
+      <li>✓ L’accès à l’éducation pour les enfants</li>
+      <li>✓ La distribution de fournitures et de matériel scolaire</li>
+      <li>✓ La construction de salles de classe</li>
+      <li>✓ La création de puits et l’accès à une eau potable durable</li>
+      <li>✓ L’aide médicale et la gestion des urgences sanitaires</li>
+      <li>✓ La distribution alimentaire régulière</li>
+      <li>✓ Le soutien pédagogique et l’accompagnement social</li>
+    </ul>
+    <div class="buttons">
+      <a href="#" class="btn orange">FAIRE UN DON</a>
+      <a href="#" class="btn brown">DEVENIR BÉNÉVOLE</a>
+    </div>
+  </section>
 
-nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
+  <footer class="social-footer">
+    <img src="camel_icon.png" alt="Chameau" class="camel">
+    <div class="icons">
+      <a href="#"><img src="youtube_icon.png" alt="YouTube"></a>
+      <a href="#"><img src="tiktok_icon.png" alt="TikTok"></a>
+      <a href="#"><img src="facebook_icon.png" alt="Facebook"></a>
+    </div>
+  </footer>
 
-nav ul li {
-  display: inline-block;
-  margin: 0 15px;
-}
-
-nav ul li a {
-  text-decoration: none;
-  color: #f9f3e5;
-  font-weight: bold;
-}
-
-.hero-logo {
-  width: 180px;
-  margin: 20px auto;
-  display: block;
-}
-
-.mission h2 {
-  font-size: 28px;
-  margin-bottom: 20px;
-  text-transform: uppercase;
-  color: #ffeaa7;
-}
-
-.mission p, .mission li {
-  font-size: 18px;
-  line-height: 1.7;
-  text-align: center;
-  margin: 10px 0;
-}
-
-.custom-list {
-  list-style: none;
-  padding: 0;
-  max-width: 800px;
-  margin: 0 auto;
-  text-align: left;
-}
-
-.custom-list li::before {
-  content: "✓ ";
-  color: #f9c74f;
-  font-weight: bold;
-  margin-right: 6px;
-}
-
-.buttons {
-  margin-top: 25px;
-}
-
-.buttons a {
-  text-decoration: none;
-  padding: 12px 25px;
-  margin: 10px;
-  display: inline-block;
-  border-radius: 5px;
-  font-weight: bold;
-  font-size: 16px;
-}
-
-.btn.orange {
-  background-color: #e67e22;
-  color: white;
-}
-
-.btn.brown {
-  background-color: #5a3d2b;
-  color: white;
-}
-
-footer.social-footer {
-  text-align: center;
-  margin: 40px 0;
-}
-
-.social-footer img {
-  width: 32px;
-  height: 32px;
-  margin: 0 12px;
-  filter: brightness(0) invert(1);
-  transition: transform 0.3s ease;
-}
-
-.social-footer img:hover {
-  transform: scale(1.2);
-}
+</body>
+</html>
