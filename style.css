@@ -1,27 +1,30 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&display=swap');
 
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Cormorant Garamond', serif;
   background-image: url('background_tifawt.png');
   background-size: cover;
-  background-position: 60% center;
+  background-position: 60% center; /* décalage léger du soleil */
   background-attachment: fixed;
   background-repeat: no-repeat;
-  color: #1a1a1a;
+  color: #fdfcfb;
+  text-shadow: 1px 1px 4px #000000;
 }
 
-/* Conteneur général (header, section, nav) avec fond transparent */
-header, section, nav {
-  background-color: rgba(255, 255, 255, 0.4); /* Opacité réduite */
-  padding: 20px;
-  border-radius: 12px;
-  margin: 20px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+header, nav, section {
+  margin: 40px auto;
+  max-width: 900px;
+  padding: 30px;
+  border-radius: 15px;
+  background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.02));
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
 }
 
-/* NAVIGATION */
 nav ul {
   list-style: none;
   padding: 0;
@@ -36,65 +39,67 @@ nav ul li {
 
 nav ul li a {
   text-decoration: none;
-  color: #3b2e1c;
+  color: #fdfcfb;
   font-weight: 600;
+  font-size: 18px;
 }
 
-/* LOGO */
 .hero-logo {
-  width: 250px;
-  margin: 20px auto;
+  width: 200px;
   display: block;
+  margin: 30px auto;
+  border-radius: 10px;
 }
 
-/* SECTION MISSION */
 .mission {
-  padding: 40px 20px;
-  line-height: 1.8;
   text-align: center;
+  line-height: 1.8;
+  font-size: 18px;
+  padding: 30px 20px;
 }
 
 .mission h2 {
-  font-size: 28px;
-  margin-bottom: 20px;
+  font-size: 32px;
+  color: #ffffff;
   text-transform: uppercase;
-  color: #3b2e1c;
+  margin-bottom: 20px;
 }
 
 .custom-list {
   list-style: none;
-  padding-left: 0;
-  text-align: left;
   max-width: 700px;
-  margin: 0 auto 30px;
+  margin: 0 auto;
+  text-align: left;
+  padding: 0;
 }
 
 .custom-list li::before {
-  content: "✓";
-  color: #c4732c;
+  content: "✓ ";
+  color: #f29f05;
   margin-right: 8px;
+  font-weight: bold;
 }
 
-/* BOUTONS */
 .buttons {
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
 .buttons a {
   text-decoration: none;
-  padding: 10px 20px;
-  margin: 5px;
-  display: inline-block;
-  border-radius: 6px;
+  padding: 12px 25px;
+  margin: 10px;
+  border-radius: 5px;
   font-weight: bold;
+  font-size: 16px;
+  display: inline-block;
 }
 
 .btn.orange {
-  background-color: #e67928;
-  color: white;
+  background-color: #f29f05;
+  color: #fff;
 }
 
 .btn.brown {
   background-color: #5a3d2b;
-  color: white;
+  color: #fff;
 }
