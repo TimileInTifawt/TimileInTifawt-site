@@ -4,189 +4,62 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Timile In Tifawt</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Georgia', serif;
-      background-image: url('background_tifawt.png');
-      background-size: cover;
-      background-position: center;
-      background-attachment: fixed;
-      color: #fff8dc;
-    }
-
-    header {
-      text-align: center;
-      padding: 30px 10px;
-    }
-
-    nav ul {
-      list-style: none;
-      padding: 0;
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 25px;
-      background-color: rgba(0, 0, 0, 0.5);
-      padding: 20px;
-      border-radius: 10px;
-    }
-
-    nav ul li a {
-      text-decoration: none;
-      color: #fff8dc;
-      font-weight: bold;
-      font-size: 18px;
-    }
-
-    .hero-logo {
-      width: 200px;
-      margin: 20px auto;
-      display: block;
-      border-radius: 10px;
-    }
-
-    section {
-      max-width: 900px;
-      margin: 0 auto;
-      background: rgba(0, 0, 0, 0.4);
-      padding: 40px 30px;
-      border-radius: 20px;
-      box-shadow: 0 0 15px rgba(255, 140, 0, 0.3);
-      text-align: center;
-    }
-
-    h2 {
-      font-size: 28px;
-      color: #ffd700;
-      margin-bottom: 20px;
-    }
-
-    p {
-      line-height: 1.7;
-      margin-bottom: 20px;
-    }
-
-    ul.custom-list {
-      text-align: left;
-      padding-left: 0;
-      list-style: none;
-    }
-
-    ul.custom-list li {
-      margin-bottom: 12px;
-    }
-
-    ul.custom-list li::before {
-      content: "✓";
-      margin-right: 10px;
-      color: #ffa500;
-    }
-
-    .buttons {
-      margin-top: 30px;
-    }
-
-    .buttons a {
-      text-decoration: none;
-      padding: 12px 25px;
-      border-radius: 5px;
-      margin: 10px;
-      display: inline-block;
-      font-weight: bold;
-    }
-
-    .btn.orange {
-      background-color: #ff8c00;
-      color: white;
-    }
-
-    .btn.brown {
-      background-color: #5a3d2b;
-      color: white;
-    }
-
-    .social-footer {
-      text-align: center;
-      margin-top: 60px;
-    }
-
-    .social-footer img {
-      width: 32px;
-      height: 32px;
-      margin: 0 10px;
-      filter: brightness(0) invert(1);
-      transition: transform 0.3s ease;
-    }
-
-    .social-footer img:hover {
-      transform: scale(1.2);
-    }
-
-    .chameau {
-      width: 60px;
-      margin-bottom: 10px;
-    }
-
-    @media (max-width: 768px) {
-      nav ul {
-        flex-direction: column;
-        align-items: center;
-      }
-      .hero-logo {
-        width: 150px;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
+
+  <nav>
+    <ul class="nav-links">
+      <li><a href="#">ACCUEIL</a></li>
+      <li><a href="#">À PROPOS</a></li>
+      <li><a href="#">NOS ACTIONS</a></li>
+      <li><a href="#">ACTUALITÉS</a></li>
+      <li><a href="mailto:info@timileintifawt.org?subject=Faire un don">FAIRE UN DON</a></li>
+      <li><a href="mailto:info@timileintifawt.org?subject=Devenir bénévole">DEVENIR BÉNÉVOLE</a></li>
+    </ul>
+  </nav>
+
   <header>
-    <nav>
-      <ul>
-        <li><a href="#">ACCUEIL</a></li>
-        <li><a href="#">À PROPOS</a></li>
-        <li><a href="#">NOS ACTIONS</a></li>
-        <li><a href="#">ACTUALITÉS</a></li>
-        <li><a href="#">FAIRE UN DON</a></li>
-        <li><a href="#">DEVENIR BÉNÉVOLE</a></li>
-      </ul>
-    </nav>
-    <img src="logo_timile.png" alt="Timile In Tifawt" class="hero-logo" />
+    <img src="logo_timile.png" alt="Timile In Tifawt" class="logo" />
   </header>
 
-  <section>
+  <section class="mission">
     <h2>NOTRE MISSION</h2>
-    <p>
-      Timile In Tifawt est une association humanitaire engagée en faveur des populations de l’Azawad,
-      notamment dans la région de TinzaWatène, ainsi que dans les camps situés à proximité de la frontière algérienne.
-    </p>
-    <p>
-      Nous agissons pour améliorer les conditions de vie des familles à travers des projets concrets et solidaires :
-    </p>
-    <ul class="custom-list">
-      <li>L’accès à l’éducation pour les enfants</li>
-      <li>La distribution de fournitures et de matériel scolaire</li>
-      <li>La construction de salles de classe</li>
-      <li>La création de puits et l’accès à une eau potable durable</li>
-      <li>L’aide médicale et la gestion des urgences sanitaires</li>
-      <li>La distribution alimentaire régulière</li>
-      <li>Le soutien pédagogique et l’accompagnement social</li>
+    <p>Timile In Tifawt est une association humanitaire engagée en faveur des populations de l’Azawad, notamment dans la région de Tinzaouaten ainsi que dans les camps situés à proximité de la frontière algérienne.</p>
+
+    <p>Nous agissons pour améliorer les conditions de vie des familles à travers des projets concrets et solidaires :</p>
+
+    <ul>
+      <li>✓ L’accès à l’éducation pour les enfants</li>
+      <li>✓ La distribution de fournitures et de matériel scolaire</li>
+      <li>✓ La construction de salles de classe</li>
+      <li>✓ La création de puits et l’accès à une eau potable durable</li>
+      <li>✓ L’aide médicale et la gestion des urgences sanitaires</li>
+      <li>✓ La distribution alimentaire régulière</li>
+      <li>✓ Le soutien pédagogique et l’accompagnement social</li>
     </ul>
 
     <div class="buttons">
-      <a href="#" class="btn orange">FAIRE UN DON</a>
-      <a href="#" class="btn brown">DEVENIR BÉNÉVOLE</a>
+      <a href="mailto:info@timileintifawt.org?subject=Faire un don" class="btn orange">FAIRE UN DON</a>
+      <a href="mailto:info@timileintifawt.org?subject=Devenir bénévole" class="btn brown">DEVENIR BÉNÉVOLE</a>
     </div>
   </section>
 
-  <div class="social-footer">
-    <img src="chameau.png" alt="Chameau" class="chameau" />
-    <div>
-      <a href="#"><img src="icon_youtube.png" alt="YouTube" /></a>
-      <a href="#"><img src="icon_tiktok.png" alt="TikTok" /></a>
-      <a href="#"><img src="icon_facebook.png" alt="Facebook" /></a>
-    </div>
+  <div class="chameau">
+    <img src="chameau.png" alt="Chameau" />
   </div>
+
+  <footer class="social-footer">
+    <a href="https://www.youtube.com/@timileintifawt" target="_blank">
+      <img src="youtube.png" alt="YouTube" />
+    </a>
+    <a href="https://www.tiktok.com/@timileintifawt" target="_blank">
+      <img src="tiktok.png" alt="TikTok" />
+    </a>
+    <a href="https://www.facebook.com/timileintifawt" target="_blank">
+      <img src="facebook.png" alt="Facebook" />
+    </a>
+  </footer>
+
 </body>
 </html>
