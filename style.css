@@ -1,76 +1,89 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Mate+SC&display=swap');
+/* Police Google */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap');
 
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Mate SC', serif;
-  background-image: url('desert_background.jpg');
+  font-family: 'Roboto Slab', serif;
+  background-image: url('background.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  color: #f4e5be;
+  background-repeat: no-repeat;
+  color: #f5deb3;
   text-align: center;
 }
 
 nav {
-  background: rgba(0, 0, 0, 0.5);
-  padding: 15px 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
 }
 
-.nav-links {
+nav ul {
   list-style: none;
+  padding: 0;
   display: flex;
   justify-content: center;
+  gap: 40px;
   flex-wrap: wrap;
-  gap: 30px;
-  padding: 0;
-  margin: 0;
 }
 
-.nav-links a {
-  color: #f4e5be;
+nav a {
   text-decoration: none;
+  color: #f5deb3;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 18px;
+}
+
+.logo-container {
+  margin: 30px 0;
 }
 
 .logo {
-  width: 200px;
-  margin: 30px auto;
-  display: block;
+  width: 150px;
+  max-width: 90%;
+  height: auto;
 }
 
-.mission {
-  max-width: 850px;
-  margin: 0 auto;
-  padding: 30px 20px;
-  background: rgba(0, 0, 0, 0.4);
-  border-radius: 12px;
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+.content {
+  background-color: rgba(0, 0, 0, 0.5);
+  margin: 20px auto;
+  padding: 30px;
+  max-width: 800px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
 }
 
-.mission h2 {
-  font-size: 32px;
-  margin-bottom: 20px;
-  color: #f4e5be;
+h2 {
+  color: #f5deb3;
+  font-size: 28px;
+  margin-bottom: 15px;
 }
 
-.mission p {
+p {
   font-size: 18px;
-  line-height: 1.6;
+  margin-bottom: 20px;
+  color: #fff8dc;
 }
 
-.mission ul {
-  list-style: none;
-  padding-left: 0;
+.custom-list {
   text-align: left;
+  padding-left: 0;
   margin: 20px 0;
 }
 
-.mission ul li {
-  margin: 10px 0;
-  font-size: 18px;
+.custom-list li {
+  list-style: none;
+  margin-bottom: 10px;
+  font-size: 17px;
+  color: #fffaf0;
+}
+
+.custom-list li::before {
+  content: "✓ ";
+  color: orange;
+  font-weight: bold;
+  margin-right: 5px;
 }
 
 .buttons {
@@ -78,50 +91,58 @@ nav {
 }
 
 .btn {
-  padding: 12px 24px;
-  margin: 10px;
-  border: none;
-  border-radius: 5px;
-  font-weight: bold;
-  font-size: 16px;
-  text-decoration: none;
   display: inline-block;
-  transition: transform 0.2s ease;
+  padding: 12px 25px;
+  font-size: 16px;
+  margin: 0 10px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
 }
 
-.btn.orange {
-  background-color: #e67e22;
+.orange {
+  background-color: #ff7f2a;
   color: white;
 }
 
-.btn.brown {
+.orange:hover {
+  background-color: #e56700;
+}
+
+.brown {
   background-color: #5c4033;
   color: white;
 }
 
-.btn:hover {
-  transform: scale(1.05);
+.brown:hover {
+  background-color: #3f2a1c;
 }
 
-.chameau img {
-  width: 60px;
-  margin: 40px auto 10px;
-  display: block;
-}
-
-.social-footer {
+.footer {
+  margin-top: 50px;
   text-align: center;
-  padding: 20px;
 }
 
-.social-footer img {
-  width: 32px;
-  height: 32px;
-  margin: 0 12px;
-  filter: brightness(0) invert(1);
-  transition: transform 0.3s ease;
+.camel {
+  width: 60px;
+  height: auto;
+  margin-bottom: 15px;
 }
 
-.social-footer img:hover {
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.social-icons img {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.3s;
+}
+
+.social-icons img:hover {
   transform: scale(1.2);
 }
