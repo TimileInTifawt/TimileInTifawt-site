@@ -16,6 +16,8 @@ header, section, nav {
   border-radius: 10px;
   margin: 20px auto;
   max-width: 900px;
+  color:#111;
+  text-shadow: 01px 2px rgba(255, 255, 255, 0.7);
 }
 
 nav ul {
