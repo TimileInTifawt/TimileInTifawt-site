@@ -1,131 +1,124 @@
+/* STYLE GLOBAL */
 body {
   margin: 0;
   padding: 0;
-  font-family: 'IM Fell English SC', serif;
-  background-image: url('background_tifawt.jpg');
+  font-family: 'Georgia', serif;
+  background-image: url('background.jpg'); /* Ton image de désert */
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  color: #f5e6c4;
+  color: #f9e5b5;
   text-align: center;
 }
 
-/* Barre de navigation */
 nav {
-  background: rgba(0, 0, 0, 0.6);
-  padding: 15px 0;
-}
-
-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-nav li {
-  margin: 0 15px;
+  background: transparent;
+  padding: 20px;
+  font-weight: bold;
+  font-size: 1.1em;
 }
 
 nav a {
+  margin: 0 15px;
+  color: #f9e5b5;
   text-decoration: none;
-  color: #f5e6c4;
-  font-weight: bold;
-  font-size: 16px;
 }
 
-.logo-container {
-  margin: 30px 0;
+nav a:hover {
+  text-decoration: underline;
 }
 
 .logo {
   width: 180px;
-  border-radius: 12px;
-}
-
-/* Section mission */
-.mission-section {
-  background-color: rgba(0, 0, 0, 0.55);
   margin: 20px auto;
-  padding: 40px;
+  display: block;
+}
+
+h1, h2 {
+  color: #f9e5b5;
+  margin: 20px 0;
+}
+
+p, li {
   max-width: 800px;
-  border-radius: 20px;
-  color: #f5e6c4;
-  box-shadow: 0 0 10px #000;
-}
-
-.mission-section h2 {
-  font-size: 32px;
-  margin-bottom: 20px;
-}
-
-.mission-section p {
-  font-size: 18px;
+  margin: auto;
   line-height: 1.6;
+  color: #f3e0b0;
+  font-size: 18px;
+  padding: 0 20px;
 }
 
-.mission-section ul {
-  list-style-type: none;
+ul {
+  list-style: none;
   padding: 0;
-  text-align: left;
-  max-width: 600px;
-  margin: 0 auto;
 }
 
-.mission-section li {
-  margin: 10px 0;
-  font-size: 16px;
+li::before {
+  content: "✓ ";
+  color: #f9e5b5;
 }
 
-/* Boutons */
+section {
+  background: rgba(0, 0, 0, 0.4);
+  padding: 40px;
+  margin: 30px auto;
+  border-radius: 20px;
+  width: 90%;
+  max-width: 1000px;
+}
+
 .buttons {
   margin-top: 30px;
 }
 
 .btn {
-  display: inline-block;
-  padding: 12px 24px;
+  padding: 12px 25px;
   margin: 10px;
-  text-decoration: none;
-  font-weight: bold;
+  border: none;
+  font-size: 1em;
   border-radius: 5px;
-  transition: transform 0.3s;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
 }
 
 .orange {
-  background-color: #f19034;
-  color: white;
+  background-color: #f7931e;
+  color: #fff;
 }
 
 .brown {
-  background-color: #5d4037;
-  color: white;
+  background-color: #4b2e1e;
+  color: #fff;
 }
 
-.btn:hover {
-  transform: scale(1.05);
+/* SOCIAL FOOTER */
+footer {
+  margin-top: 50px;
+  padding: 20px;
 }
 
-/* Footer */
-.footer {
-  margin-top: 60px;
-  text-align: center;
-}
-
-.chameau {
-  width: 50px;
-  margin-bottom: 20px;
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-top: 20px;
 }
 
 .social-icons img {
   width: 40px;
-  margin: 0 10px;
+  height: 40px;
   transition: transform 0.3s ease;
 }
 
 .social-icons img:hover {
   transform: scale(1.2);
-  filter: brightness(1.5);
+}
+
+/* CHAMEAU */
+.chameau {
+  display: block;
+  margin: 40px auto 10px;
+  width: 50px;
 }
