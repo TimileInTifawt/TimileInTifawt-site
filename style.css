@@ -1,12 +1,4 @@
 
-body {
-  background-image: url('background_tifawt.jpg');
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  color: white; /* Pour que le texte ressorte mieux */
-}
     margin: 0;
     font-family: Arial, sans-serif;
     
