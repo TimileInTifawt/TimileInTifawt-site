@@ -13,17 +13,31 @@
       padding: 0;
     }
 
-    header {
+    nav {
       background-color: #1f1f1f;
-      padding: 20px;
+      padding: 15px;
       text-align: center;
     }
 
     nav a {
-      margin: 0 15px;
       color: #ffc107;
+      margin: 0 12px;
       text-decoration: none;
       font-weight: bold;
+      font-size: 1em;
+      display: inline-block;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #ffffff;
+    }
+
+    @media (max-width: 600px) {
+      nav a {
+        display: block;
+        margin: 10px 0;
+      }
     }
 
     main {
@@ -36,6 +50,7 @@
     h1 {
       text-align: center;
       margin-bottom: 40px;
+      color: #ffc107;
     }
 
     .actu {
@@ -58,12 +73,12 @@
 <body>
   <header>
     <nav>
-  <a href="index.html">Accueil</a>
-  <a href="apropos.html">À propos</a>
-  <a href="nos_actions.html">Nos actions</a>
-  <a href="actualites.html">Actualités</a>
-  <a href="#">Faire un don</a>
-</nav>
+      <a href="index.html">Accueil</a>
+      <a href="apropos.html">À propos</a>
+      <a href="nos_actions.html">Nos actions</a>
+      <a href="actualites.html">Actualités</a>
+      <a href="#">Faire un don</a>
+    </nav>
   </header>
 
   <main>
@@ -78,7 +93,7 @@
     <div class="actu">
       <h2>Création de l’association en cours</h2>
       <p class="date">À venir</p>
-      <p>Nous travaillons actuellement à la déclaration officielle de l’association. Bientôt, vous pourrez faire un don, ou nous rejoindre dans nos projets.</p>
+      <p>Nous travaillons actuellement à la déclaration officielle de l’association. Bientôt, vous pourrez faire un don ou nous rejoindre dans nos projets.</p>
     </div>
   </main>
 </body>
