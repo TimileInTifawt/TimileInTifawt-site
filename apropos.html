@@ -6,24 +6,38 @@
   <title>À propos - Timile In Tifawt</title>
   <style>
     body {
-      background: #121212;
+      background-color: #121212;
       color: #ffffff;
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
     }
 
-    header {
+    nav {
       background-color: #1f1f1f;
-      padding: 20px;
+      padding: 15px;
       text-align: center;
     }
 
     nav a {
-      margin: 0 15px;
       color: #ffc107;
+      margin: 0 12px;
       text-decoration: none;
       font-weight: bold;
+      font-size: 1em;
+      display: inline-block;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #ffffff;
+    }
+
+    @media (max-width: 600px) {
+      nav a {
+        display: block;
+        margin: 10px 0;
+      }
     }
 
     main {
@@ -37,6 +51,7 @@
     h1 {
       text-align: center;
       margin-bottom: 30px;
+      color: #ffc107;
     }
 
     p {
@@ -47,40 +62,26 @@
 <body>
   <header>
     <nav>
-  <a href="index.html">Accueil</a>
-  <a href="apropos.html">À propos</a>
-  <a href="nos_actions.html">Nos actions</a>
-  <a href="actualites.html">Actualités</a>
-  <a href="#">Faire un don</a>
-</nav>
+      <a href="index.html">Accueil</a>
+      <a href="apropos.html">À propos</a>
+      <a href="nos_actions.html">Nos actions</a>
+      <a href="actualites.html">Actualités</a>
+      <a href="#">Faire un don</a>
+    </nav>
   </header>
 
   <main>
     <h1>À propos</h1>
 
-    <p>
-      <strong>Timile In Tifawt</strong> signifie "les premiers rayons du matin" en tamasheq.  
-      Un nom choisi avec le cœur, pour dire l’espoir, la lumière qui revient, même après la nuit la plus longue.
-    </p>
+    <p><strong>Timile In Tifawt</strong> signifie « les premiers rayons du matin » en tamasheq. Un nom qui reflète l’espoir, la lumière après la nuit, et la volonté de faire renaître ce qui a été brisé.</p>
 
-    <p>
-      Ce projet est né d’un besoin profond : celui de ne pas détourner les yeux.  
-      De regarder l’injustice, la souffrance et l’oubli — et de répondre avec humanité.  
-      L’Azawad est loin pour certains, mais chaque vie touchée là-bas nous rapproche de notre propre humanité.
-    </p>
+    <p>Ce projet est né d’un besoin simple mais profond : ne pas détourner le regard. Reconnaître la douleur d’un peuple, et répondre avec humanité. Car là où certains ne voient qu’un désert, d’autres entendent les cris du silence.</p>
 
-    <p>
-      Timile In Tifawt n’est pas une grande organisation.  
-      C’est une volonté simple : agir, même modestement.  
-      Offrir un peu d’école, un peu d’eau, un peu de soin. Mais surtout, beaucoup de respect.
-    </p>
+    <p>Timile In Tifawt n’est pas une grande structure. C’est une main tendue, une parole fidèle, une flamme qui persiste. Un engagement modeste, mais sincère, pour redonner de la dignité à ceux que le monde oublie.</p>
 
-    <p>
-      Ici, nous croyons que la solidarité est une lumière.  
-      Et qu’ensemble, même à distance, nous pouvons faire renaître un matin.
-    </p>
+    <p>Ici, nous croyons que la solidarité est une lumière. Et qu’ensemble, même à distance, nous pouvons faire renaître un matin.</p>
 
-    <p style="text-align:center; margin-top: 40px;">
+    <p style="text-align: center; margin-top: 30px;">
       Merci de faire partie de cette lumière.
     </p>
   </main>
