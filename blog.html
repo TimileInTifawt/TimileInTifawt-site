@@ -5,19 +5,30 @@
   <title>Blog - Timile In Tifawt</title>
   <link rel="stylesheet" href="style.css">
   <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+    }
     body {
       background-image: url('background-blog.png');
       background-size: cover;
       background-position: center center;
+      background-repeat: no-repeat;
       background-attachment: fixed;
+      background-color: black;
       color: white;
       font-family: Arial, sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2em;
+      box-sizing: border-box;
     }
     .contenu {
       background-color: rgba(0, 0, 0, 0.6);
       padding: 2em;
-      margin: 5em auto;
       max-width: 900px;
+      width: 100%;
       border-radius: 15px;
     }
     h1 {
