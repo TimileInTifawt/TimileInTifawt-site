@@ -1,1 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Timile In Tifawt</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .blog-article {
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+        .blog-article h4 {
+            color: #FFA500; /* orange */
+            margin-top: 0;
+        }
+        .blog-article p {
+            line-height: 1.6;
+        }
+        .blog-article img {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+        .signature {
+            font-style: italic;
+            text-align: right;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo-timile.png" alt="Timile In Tifawt">
+            <h1>Timile In Tifawt</h1>
+            <p>Les premiers rayons du matin</p>
+        </div>
+        <button class="menu-toggle" onclick="toggleMenu()">☰ Menu</button>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="à-propos.html">À propos</a></li>
+                <li><a href="actualites.html">Actualités</a></li>
+                <li><a href="nos_actions.html">Nos actions</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
 
+    <main>
+        <section>
+            <h2>Blog</h2>
+            <p>Un espace d'émotion, de mémoire et de partage. Ici résonnent les mots nés du désert, de l'exil et de l'espérance.</p>
+
+            <!-- Article 1 -->
+            <div class="blog-article">
+                <img src="photo1.jpg" alt="L’appel du désert">
+                <h4>L’appel du désert</h4>
+                <p>Dans le silence du vent, une voix s’élève, celle d’un peuple oublié, et d’un désert qui n’a jamais cessé de respirer.<br>
+                Là-bas, au-delà des dunes et des frontières imposées, vivent les mémoires d’un exil et d’une dignité volée.<br>
+                Chaque grain de sable porte l’histoire d’un peuple qui marche dans l’ombre, mais dont les pas résonnent encore.<br>
+                C’est un appel que le vent porte, un chant de liberté, un cri d’existence que nul ne pourra effacer.<br>
+                Car le désert est vivant, et la mémoire de ses fils et filles résiste, silencieuse et forte, même dans la poussière.<br>
+                <span class="signature">— F. Meg</span></p>
+            </div>
+
+            <!-- Article 2 -->
+            <div class="blog-article">
+                <img src="photo2.jpg" alt="Les puits d’Azawad — Promesses de vie">
+                <h4>Les puits d’Azawad — Promesses de vie</h4>
+                <p>Dans les creux de la terre, des mains courageuses creusent la vie, défiant la soif et la poussière.<br>
+                Là où le sable règne, un puits est un miracle, un chant d’espérance pour des familles entières.<br>
+                Chaque goutte jaillie est une victoire contre l’oubli, un acte de résistance contre la sécheresse.<br>
+                Ces puits, ce sont des promesses : des rires d’enfants, des femmes qui n’ont plus à porter la soif sur leurs épaules, et un avenir qu’on refuse de laisser s’éteindre.<br>
+                <span class="signature">— F. Meg</span></p>
+            </div>
+
+            <!-- Article 3 -->
+            <div class="blog-article">
+                <img src="photo3.jpg" alt="Les enfants oubliés">
+                <h4>Les enfants oubliés</h4>
+                <p>Leurs regards portent l’exil et l’absence, mais aussi la lumière de demain.<br>
+                Dans chaque sourire, une résistance ; dans chaque silence, une dignité que l’oubli ne peut effacer.<br>
+                Ils sont l’espoir que le désert refuse d’enterrer, une promesse de vie que nous devons protéger.<br>
+                À ces enfants, nous devons des histoires à écrire, des écoles à bâtir et des rêves à libérer.<br>
+                <span class="signature">— F. Meg</span></p>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Timile In Tifawt. Tous droits réservés.</p>
+    </footer>
+
+    <script>
+    function toggleMenu() {
+        const navUl = document.querySelector('nav ul');
+        navUl.classList.toggle('show');
+    }
+    </script>
+</body>
+</html>
