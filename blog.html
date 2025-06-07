@@ -1,1 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Timile In Tifawt</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .blog-article {
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+        .blog-article h4 a {
+            color: #FFA500; /* orange */
+            text-decoration: none;
+        }
+        .blog-article h4 a:hover {
+            text-decoration: underline;
+        }
+        .blog-article img {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo-timile.png" alt="Timile In Tifawt">
+            <h1>Timile In Tifawt</h1>
+            <p>Les premiers rayons du matin</p>
+        </div>
+        <button class="menu-toggle" onclick="toggleMenu()">☰ Menu</button>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="à-propos.html">À propos</a></li>
+                <li><a href="actualites.html">Actualités</a></li>
+                <li><a href="nos_actions.html">Nos actions</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
 
+    <main>
+        <section>
+            <h2>Blog</h2>
+            <p>Un espace d'émotion, de mémoire et de partage. Ici résonnent les mots nés du désert, de l'exil et de l'espérance.</p>
+
+            <div class="blog-article">
+                <img src="photo1.jpg" alt="L’appel du désert">
+                <h4><a href="#">L’appel du désert</a></h4>
+                <p>Le souffle des dunes, la mémoire du peuple, et l’appel silencieux d’une terre oubliée.</p>
+            </div>
+
+            <div class="blog-article">
+                <img src="photo2.jpg" alt="Les puits d’Azawad – Promesses de vie">
+                <h4><a href="#">Les puits d’Azawad – Promesses de vie</a></h4>
+                <p>Une ode à la dignité, à la soif, et aux kilomètres parcourus pour faire jaillir la vie du sable.</p>
+            </div>
+
+            <div class="blog-article">
+                <img src="photo3.jpg" alt="Les enfants oubliés">
+                <h4><a href="#">Les enfants oubliés</a></h4>
+                <p>Un hommage aux enfants d’Azawad, entre dignité, silence et espérance.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Timile In Tifawt. Tous droits réservés.</p>
+    </footer>
+
+    <script>
+    function toggleMenu() {
+        const navUl = document.querySelector('nav ul');
+        navUl.classList.toggle('show');
+    }
+    </script>
+</body>
+</html>
