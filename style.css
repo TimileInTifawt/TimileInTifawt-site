@@ -1,95 +1,114 @@
-/* Style général */
-body {
+/* Réinitialisation des marges et des paddings */
+* {
     margin: 0;
-    font-family: Arial, sans-serif;
-    background: url('background.jpg') center center fixed;
-    background-size: cover;
-    color: white;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* Entête */
+/* Corps général */
+body {
+    font-family: Arial, sans-serif;
+    color: white;
+    background: url('background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    line-height: 1.6;
+    min-height: 100vh;
+}
+
+/* En-tête */
 header {
-    background-color: rgba(0, 0, 0, 0.7);
-    padding: 1em;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 10px 0;
     text-align: center;
 }
 
-header h1 {
-    margin: 0;
-    font-size: 2.5em;
-    font-weight: bold;
+header img#logo {
+    width: 100px;
+    height: auto;
+    margin-bottom: 5px;
 }
 
-header p {
-    margin: 0.3em 0 0 0;
-    font-size: 1.2em;
-    font-style: italic;
-}
-
-/* Navigation */
 nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 1em 0;
+    list-style: none;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-}
-
-nav ul li {
-    margin: 0 1em;
+    gap: 20px;
 }
 
 nav ul li a {
+    color: yellow;
     text-decoration: none;
-    color: #ffd700; /* Jaune doré pour les liens */
     font-weight: bold;
-    transition: color 0.3s ease;
+    font-size: 1.1em;
+    transition: color 0.3s;
 }
 
 nav ul li a:hover {
-    color: #ffffff;
-    text-decoration: underline;
+    color: orange;
 }
 
-/* Main */
+/* Section principale */
 main {
-    background-color: rgba(0, 0, 0, 0.6);
-    padding: 2em;
-    margin: 1em auto;
+    background: rgba(0, 0, 0, 0.6);
     max-width: 800px;
-    border-radius: 10px;
+    margin: 40px auto;
+    padding: 20px;
+    border-radius: 8px;
 }
 
-/* Titres */
-h2 {
-    color: #ffd700;
-    margin-top: 0;
-}
-
-/* Liste à puces */
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-ul li {
-    margin: 0.5em 0;
-    padding-left: 1em;
-    text-indent: -1em;
-}
-
-ul li::before {
-    content: "✓ ";
-    color: #ffd700;
-    font-weight: bold;
-}
-
-/* Footer */
-footer {
-    background-color: rgba(0, 0, 0, 0.7);
+main h1 {
     text-align: center;
-    padding: 1em;
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: yellow;
+}
+
+main p {
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+/* Icône chameau */
+.icon-container {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.camel-icon {
+    width: 50px;
+    height: auto;
+}
+
+/* Réseaux sociaux */
+.social-icons {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons img {
+    width: 40px;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.social-icons img:hover {
+    transform: scale(1.2);
+}
+
+/* Pied de page */
+footer {
+    background: rgba(0, 0, 0, 0.6);
+    text-align: center;
+    padding: 10px 0;
     font-size: 0.9em;
-    margin-top: 2em;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 40px;
 }
