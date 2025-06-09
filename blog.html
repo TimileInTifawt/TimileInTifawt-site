@@ -3,7 +3,177 @@
 <head>
     <meta charset="UTF-8">
     <title>Blog - Timile In Tifawt</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 18px;
+            background: url('background.jpg') no-repeat center center fixed;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            color: white;
+        }
+
+        header {
+            background: rgba(200, 127, 73, 0.8);
+            text-align: center;
+            padding: 1rem;
+        }
+
+        header .logo {
+            max-width: 150px;
+            height: auto;
+            margin-bottom: 0.5rem;
+        }
+
+        nav {
+            background: rgba(166, 75, 42, 0.8);
+            text-align: center;
+            padding: 0.5rem;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            background: rgba(0, 0, 0, 0.6);
+            padding: 1rem;
+            margin: 1rem auto;
+            max-width: 1000px;
+            border-radius: 8px;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        .sommaire {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 1rem;
+            border-radius: 8px;
+            list-style: none;
+            max-width: 600px;
+            margin: 1rem auto;
+        }
+
+        .sommaire li {
+            margin: 0.5rem 0;
+        }
+
+        .sommaire a {
+            color: lightblue;
+            text-decoration: none;
+        }
+
+        .sommaire a:hover {
+            text-decoration: underline;
+        }
+
+        .comment-section {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 1rem;
+            border-radius: 8px;
+            max-width: 600px;
+            margin: 2rem auto;
+        }
+
+        .comment-section input[type="text"],
+        .comment-section textarea {
+            width: 100%;
+            padding: 0.5rem;
+            margin: 0.5rem 0;
+            border-radius: 5px;
+            border: none;
+        }
+
+        .comment-section input[type="submit"] {
+            background-color: orange;
+            color: white;
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .comment-section input[type="submit"]:hover {
+            background-color: darkorange;
+        }
+
+        .notice {
+            font-size: 0.9rem;
+            color: lightgray;
+            margin-top: 0.5rem;
+            text-align: center;
+        }
+
+        .return-home {
+            text-align: center;
+            margin-top: 2rem;
+        }
+
+        .return-home a {
+            background-color: orange;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .return-home a:hover {
+            background-color: darkorange;
+        }
+
+        footer {
+            background: rgba(200, 127, 73, 0.8);
+            text-align: center;
+            padding: 1rem;
+        }
+
+        .social-icons {
+            text-align: center;
+            margin: 1rem 0;
+        }
+
+        .camel-icon {
+            max-width: 80px;
+            height: auto;
+            display: block;
+            margin: 0 auto 0.5rem;
+        }
+
+        .social-icons .icons img {
+            max-width: 60px;
+            height: auto;
+            margin: 0 10px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+            padding: 5px;
+            transition: transform 0.2s;
+        }
+
+        .social-icons .icons img:hover {
+            transform: scale(1.1);
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -20,37 +190,13 @@
         </ul>
     </nav>
 
-    <main class="blog-container">
+    <main>
         <h2>Blog</h2>
 
         <h3>Sommaire des articles :</h3>
         <ul class="sommaire">
-            <li><a href="#appel-du-desert">Appel du désert</a></li>
-            <li><a href="#mon-clip">Mon clip vidéo</a></li>
-            <!-- Ajouter d'autres articles ici -->
+            <!-- Les articles seront ajoutés ici plus tard -->
         </ul>
-
-        <article id="appel-du-desert">
-            <h3 class="orange-title">Appel du désert</h3>
-            <img src="desert-citation.jpg" alt="Appel du désert" class="article-image">
-            <p>
-                Un texte ou un poème sur le désert et ses mystères...
-            </p>
-        </article>
-
-        <article id="mon-clip">
-            <h3 class="blue-title">Mon clip vidéo</h3>
-            <a href="LIEN_VERS_LA_VIDEO" target="_blank">
-                <img src="miniature-video.jpg" alt="Nom du clip vidéo" class="article-image">
-            </a>
-            <p>
-                Ce clip vidéo est un hommage à la musique et aux traditions du désert.  
-                Cliquez sur l'image ou sur le lien ci-dessous pour le découvrir !
-            </p>
-            <p>
-                <a href="LIEN_VERS_LA_VIDEO" target="_blank">👉 Voir la vidéo complète sur TikTok/Facebook</a>
-            </p>
-        </article>
 
         <section class="comment-section">
             <h3>Laisser un commentaire</h3>
@@ -61,7 +207,7 @@
                 <textarea id="commentaire" name="commentaire" rows="5" required></textarea><br><br>
                 <input type="submit" value="Envoyer">
             </form>
-            <p class="notice">Les commentaires sont soumis à validation avant publication.</p>
+            <p class="notice">* Les commentaires sont soumis à validation avant publication.</p>
         </section>
 
         <div class="return-home">
