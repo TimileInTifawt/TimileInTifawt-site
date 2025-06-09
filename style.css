@@ -45,7 +45,7 @@ nav a {
     text-decoration: none;
     color: #FFD700;
     font-weight: bold;
-    font-size: 1.1em; /* Taille légèrement augmentée */
+    font-size: 1.1em;
 }
 
 main {
@@ -55,14 +55,15 @@ main {
 }
 
 .hero {
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('hero-background.jpg') center/cover;
-    padding: 30px 20px;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('background.jpg') center/cover no-repeat;
+    padding: 40px 20px;
     text-align: center;
     border-radius: 10px;
+    min-height: 200px;
 }
 
 .hero h1 {
-    font-size: 3em;
+    font-size: 2.5em;
     margin-bottom: 10px;
     color: #FFD700;
 }
@@ -86,6 +87,7 @@ main {
 
 .intro p {
     text-align: justify;
+    margin-bottom: 10px;
 }
 
 .intro .quote {
@@ -95,11 +97,18 @@ main {
     color: #FFD700;
 }
 
-/* Chameau plus petit */
-.camel .icon img {
-    width: 80px;
+/* Chameau sans cadre, centré, plus petit, effet transparence */
+.camel img {
+    width: 60px;
     height: auto;
-    border-radius: 8px;
+    margin: 20px auto;
+    display: block;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+.camel img:hover {
+    opacity: 1;
 }
 
 /* Réseaux sociaux plus petits et alignés */
@@ -113,7 +122,7 @@ main {
 }
 
 .icons .icon img {
-    width: 50px;
+    width: 40px;
     height: auto;
     border-radius: 8px;
     transition: transform 0.3s;
@@ -146,6 +155,7 @@ footer {
     transition: all 0.3s ease;
 }
 
+/* Responsive */
 @media (max-width: 768px) {
     nav ul {
         display: none;
@@ -177,5 +187,13 @@ footer {
     }
     .burger.toggle .line:nth-child(3) {
         transform: rotate(-45deg) translate(5px, -5px);
+    }
+
+    .hero h1 {
+        font-size: 2em;
+    }
+
+    .icons .icon img {
+        width: 40px;
     }
 }
