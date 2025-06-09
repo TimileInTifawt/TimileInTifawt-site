@@ -2,74 +2,16 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog - Timile In Tifawt</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-        body {
-            background: 
-                linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-                url('background.jpg') no-repeat center center fixed;
-            background-size: cover;
-            color: white;
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: rgba(0, 0, 0, 0.6);
-            padding: 10px;
-            text-align: center;
-        }
-        nav ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-        }
-        nav li {
-            display: inline;
-            margin-right: 20px;
-        }
-        nav a {
-            color: yellow;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        .container {
-            background-color: rgba(0, 0, 0, 0.5);
-            margin: 20px auto;
-            padding: 20px;
-            max-width: 800px;
-            border-radius: 10px;
-        }
-        h1, h2 {
-            color: yellow;
-            text-align: center;
-        }
-        img {
-            display: block;
-            max-width: 100%;
-            height: auto;
-            margin: 20px auto;
-            border-radius: 10px;
-        }
-        footer {
-            text-align: center;
-            padding: 10px;
-            font-size: 0.9em;
-            background-color: rgba(0, 0, 0, 0.6);
-        }
-    </style>
 </head>
 <body>
     <header>
         <h1>Timile In Tifawt</h1>
-        <p>Les premiers rayons du matin</p>
         <nav>
             <ul>
                 <li><a href="index.html">Accueil</a></li>
-                <li><a href="propos.html">À propos</a></li>
+                <li><a href="a-propos.html">À propos</a></li>
                 <li><a href="actualites.html">Actualités</a></li>
                 <li><a href="nos_actions.html">Nos actions</a></li>
                 <li><a href="blog.html">Blog</a></li>
@@ -77,38 +19,43 @@
         </nav>
     </header>
 
-    <div class="container">
-        <h2>Blog</h2>
-        <p>Un espace d'émotion, de mémoire et de partage.<br>
-        Ici résonnent les mots nés du désert, de l'exil et de l'espérance.</p>
+    <main>
+        <h2 class="page-title">Blog</h2>
 
-        <h3>L'appel du désert</h3>
-        <img src="desert-citation.jpg" alt="Désert et citation">
-        <p>Dans le silence du vent, une voix s'élève, celle d’un peuple oublié, et d’un désert qui n’a jamais cessé de respirer.</p>
-        <p>Là-bas, au-delà des dunes et des frontières imposées, vivent les mémoires d’un exil et d’une dignité volée.</p>
-        <p>Chaque grain de sable porte l’histoire d’un peuple qui marche dans l’ombre, mais dont les pas résonnent encore.</p>
-        <p>C’est un appel que le vent porte, un chant de liberté, un cri d’existence que nul ne pourra effacer.</p>
-        <p>Car le désert est vivant, et la mémoire de ses fils et filles résiste, silencieuse et forte, même dans la poussière.</p>
+        <!-- Sommaire -->
+        <div class="sommaire">
+            <h3>Sommaire</h3>
+            <ul>
+                <li><a href="#article1">L'appel du désert</a></li>
+                <li><a href="#article2">Les puits d'Azawad - Promesses de vie</a></li>
+                <li><a href="#article3">Résistance et espoir</a></li>
+            </ul>
+        </div>
 
-        <h3>Les puits d’Azawad – Promesses de vie</h3>
-        <img src="puits-azawad.jpg" alt="Puits d’Azawad">
-        <p>Une ode à la dignité, à la soif, et aux kilomètres parcourus pour faire jaillir la vie du sable.</p>
-        <p>Chaque goutte d’eau est une victoire contre l’oubli, un rappel que le désert porte en lui une promesse de vie.</p>
-        <p>Les puits sont des cœurs battants pour les nomades, un espoir qui ne s’éteint jamais.</p>
-        <p>Dans chaque puits, c’est l’âme d’Azawad qui puise sa force et sa dignité, pour que demain ait un nom et une lumière.</p>
+        <!-- Article 1 -->
+        <article id="article1">
+            <h3>L'appel du désert</h3>
+            <img src="desert-citation.jpg" alt="Désert">
+            <p>Dans le silence du vent, une voix s'élève...</p>
+        </article>
 
-        <h3>Les enfants oubliés</h3>
-        <img src="photo1.jpg" alt="Les enfants oubliés">
-        <img src="photo2.jpg" alt="Les enfants oubliés">
-        <img src="photo3.jpg" alt="Les enfants oubliés">
-        <p>Un hommage aux enfants d’Azawad, entre dignité, silence et espérance.</p>
-        <p>Ils marchent pieds nus sur le sable brûlant, les yeux levés vers le ciel comme pour chercher des étoiles de réconfort.</p>
-        <p>Ils sont l’innocence volée par la guerre, la vie qui refuse de s’éteindre malgré les épreuves.</p>
-        <p>Puissent leurs sourires renaître au creux de nos mains tendues, pour que demain leur rende la lumière.</p>
-    </div>
+        <!-- Article 2 -->
+        <article id="article2">
+            <h3>Les puits d'Azawad - Promesses de vie</h3>
+            <img src="puits-azawad.jpg" alt="Puits d'Azawad">
+            <p>Une ode à la dignité, à la soif...</p>
+        </article>
+
+        <!-- Article 3 -->
+        <article id="article3">
+            <h3>Résistance et espoir</h3>
+            <img src="resistance1.png" alt="Résistance">
+            <p>Texte de ton article sur la résistance...</p>
+        </article>
+    </main>
 
     <footer>
-        &copy; 2025 Timile In Tifawt. Tous droits réservés.
+        <p>&copy; 2025 Timile In Tifawt. Tous droits réservés.</p>
     </footer>
 </body>
 </html>
