@@ -1,97 +1,91 @@
 body {
-    background: url('background-blog.png') no-repeat center center fixed;
-    background-size: cover;
-    color: white;
-    font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1f1f1f;
+    color: #f1f1f1;
 }
 
 header {
-    background-color: rgba(0, 0, 0, 0.7);
-    text-align: center;
-    padding: 1em 0;
-}
-
-header h1 {
-    margin: 0;
-    font-size: 2em;
-    color: #FFD700;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+    background: linear-gradient(to right, #3c1e00, #af6d28);
+    padding: 10px;
     text-align: center;
 }
 
-nav li {
-    display: inline-block;
-    margin: 0 1em;
+.logo {
+    height: 80px;
 }
 
 nav a {
+    margin: 0 10px;
+    color: #fff;
     text-decoration: none;
-    color: #FFD700;
     font-weight: bold;
 }
 
-.page-title {
+nav a.active {
+    text-decoration: underline;
+}
+
+main {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+h1.blog-title {
     text-align: center;
-    font-size: 2em;
-    color: #FFD700;
-    margin-top: 20px;
+    color: #ffcc00;
 }
 
 .sommaire {
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 1em;
-    margin: 1em auto;
-    width: 80%;
-    border-radius: 10px;
+    background: rgba(255, 204, 0, 0.1);
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
 }
 
-.sommaire h3 {
+.sommaire h2 {
     margin-top: 0;
-    color: #FFD700;
+    color: #ffcc00;
 }
 
 .sommaire ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.sommaire li {
-    margin: 0.5em 0;
+    list-style-type: disc;
+    padding-left: 20px;
 }
 
 .sommaire a {
-    color: #FFD700;
+    color: #fff;
     text-decoration: none;
 }
 
-article {
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 1em;
-    margin: 1em auto;
-    width: 80%;
-    border-radius: 10px;
+.sommaire a:hover {
+    text-decoration: underline;
 }
 
-article h3 {
-    color: #FFD700;
+article {
+    margin-bottom: 40px;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 15px;
+    border-radius: 8px;
+}
+
+article h2 {
+    color: #ffcc00;
 }
 
 article img {
     max-width: 100%;
     height: auto;
-    border-radius: 10px;
-    margin-top: 1em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
 }
 
 footer {
     text-align: center;
-    padding: 1em;
-    background-color: rgba(0, 0, 0, 0.7);
+    padding: 15px;
+    background-color: #333;
+    font-size: 0.9em;
+    color: #fff;
 }
