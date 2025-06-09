@@ -9,7 +9,6 @@
     <header>
         <img src="logo-timile.png" alt="Logo Timile In Tifawt" class="logo">
         <h1>Timile In Tifawt</h1>
-        <p>Une lumière d’espoir pour l’Azawad : éducation, santé, eau et dignité.</p>
     </header>
 
     <nav>
@@ -21,17 +20,65 @@
         </ul>
     </nav>
 
-    <main>
+    <main class="blog-container">
         <h2>Blog</h2>
-        <p>Retrouvez ici nos articles, réflexions et témoignages sur l’Azawad et nos actions humanitaires.</p>
+
+        <h3>Sommaire des articles :</h3>
+        <ul class="sommaire">
+            <li><a href="#appel-du-desert">Appel du désert</a></li>
+            <li><a href="#mon-clip">Mon clip vidéo</a></li>
+            <!-- Ajouter d'autres articles ici -->
+        </ul>
+
+        <article id="appel-du-desert">
+            <h3 class="orange-title">Appel du désert</h3>
+            <img src="desert-citation.jpg" alt="Appel du désert" class="article-image">
+            <p>
+                Un texte ou un poème sur le désert et ses mystères...
+            </p>
+        </article>
+
+        <article id="mon-clip">
+            <h3 class="blue-title">Mon clip vidéo</h3>
+            <a href="LIEN_VERS_LA_VIDEO" target="_blank">
+                <img src="miniature-video.jpg" alt="Nom du clip vidéo" class="article-image">
+            </a>
+            <p>
+                Ce clip vidéo est un hommage à la musique et aux traditions du désert.  
+                Cliquez sur l'image ou sur le lien ci-dessous pour le découvrir !
+            </p>
+            <p>
+                <a href="LIEN_VERS_LA_VIDEO" target="_blank">👉 Voir la vidéo complète sur TikTok/Facebook</a>
+            </p>
+        </article>
+
+        <section class="comment-section">
+            <h3>Laisser un commentaire</h3>
+            <form action="mailto:votreadresse@email.com" method="post" enctype="text/plain">
+                <label for="nom">Nom :</label><br>
+                <input type="text" id="nom" name="nom" required><br><br>
+                <label for="commentaire">Message :</label><br>
+                <textarea id="commentaire" name="commentaire" rows="5" required></textarea><br><br>
+                <input type="submit" value="Envoyer">
+            </form>
+            <p class="notice">Les commentaires sont soumis à validation avant publication.</p>
+        </section>
+
+        <div class="return-home">
+            <a href="index.html">← Retour à l’accueil</a>
+        </div>
     </main>
 
     <footer>
         <div class="social-icons">
             <img src="camel-icon.png" alt="Camel icon" class="camel-icon">
             <div class="icons">
-                <a href="#"><img src="facebook.png" alt="Facebook"></a>
-                <a href="#"><img src="tiktok.png" alt="TikTok"></a>
+                <a href="https://www.facebook.com/share/1BHYEoLvSa/" target="_blank">
+                    <img src="facebook.png" alt="Facebook">
+                </a>
+                <a href="https://www.tiktok.com/@fouzia.meg?_t=ZN-8x4T9fAfrcM&_r=1" target="_blank">
+                    <img src="tiktok.png" alt="TikTok">
+                </a>
             </div>
         </div>
         <p>&copy; 2025 Timile In Tifawt. Tous droits réservés.</p>
