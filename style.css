@@ -3,6 +3,7 @@ body {
     margin: 0;
     background: #1f1f1f;
     color: #fff;
+    line-height: 1.6;
 }
 
 header {
@@ -16,7 +17,6 @@ header {
     animation: logoFadeZoom 2s ease-in-out;
 }
 
-/* Animation du logo */
 @keyframes logoFadeZoom {
     0% {
         opacity: 0;
@@ -37,11 +37,6 @@ nav ul {
     flex-wrap: wrap;
 }
 
-nav ul.active {
-    display: block;
-    text-align: center;
-}
-
 nav ul li {
     margin: 0 10px;
 }
@@ -50,6 +45,7 @@ nav a {
     text-decoration: none;
     color: #FFD700;
     font-weight: bold;
+    font-size: 1.1em; /* Taille légèrement augmentée */
 }
 
 main {
@@ -60,7 +56,7 @@ main {
 
 .hero {
     background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('hero-background.jpg') center/cover;
-    padding: 40px 20px;
+    padding: 30px 20px;
     text-align: center;
     border-radius: 10px;
 }
@@ -89,7 +85,6 @@ main {
 }
 
 .intro p {
-    line-height: 1.6;
     text-align: justify;
 }
 
@@ -100,22 +95,31 @@ main {
     color: #FFD700;
 }
 
+/* Chameau plus petit */
+.camel .icon img {
+    width: 80px;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Réseaux sociaux plus petits et alignés */
 .icons {
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 20px;
-    margin-top: 30px;
+    margin-top: 20px;
     flex-wrap: wrap;
 }
 
-.icon img {
-    width: 100px;
+.icons .icon img {
+    width: 50px;
     height: auto;
     border-radius: 8px;
     transition: transform 0.3s;
 }
 
-.icon img:hover {
+.icons .icon img:hover {
     transform: scale(1.1);
 }
 
@@ -150,6 +154,11 @@ footer {
         background-color: rgba(0,0,0,0.9);
     }
 
+    nav ul.active {
+        display: block;
+        text-align: center;
+    }
+
     nav ul li {
         margin: 10px 0;
     }
@@ -163,11 +172,9 @@ footer {
     .burger.toggle .line:nth-child(1) {
         transform: rotate(45deg) translate(5px, 5px);
     }
-
     .burger.toggle .line:nth-child(2) {
         opacity: 0;
     }
-
     .burger.toggle .line:nth-child(3) {
         transform: rotate(-45deg) translate(5px, -5px);
     }
