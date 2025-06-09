@@ -1,68 +1,34 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Timile In Tifawt</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Timile In Tifawt</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <div class="logo-container">
-      <img src="logo-timile.png" alt="Timile In Tifawt">
-    </div>
+    <header>
+        <img src="images/logo-timile.png" alt="Logo Timile In Tifawt" class="logo">
+        <h1>Timile In Tifawt</h1>
+        <p>Une lumière d’espoir pour l’Azawad : éducation, santé, eau et dignité.</p>
+    </header>
+
     <nav>
-      <div class="burger" id="burger">
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-      </div>
-      <ul id="nav-links">
-        <li><a href="#">Accueil</a></li>
-        <li><a href="#">À propos</a></li>
-        <li><a href="#">Actualités</a></li>
-        <li><a href="#">Nos actions</a></li>
-        <li><a href="#">Blog</a></li>
-      </ul>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="propos.html">À propos</a></li>
+            <li><a href="actualites.html">Actualités</a></li>
+            <li><a href="nos_actions.html">Nos actions</a></li>
+            <li><a href="blog.html">Blog</a></li>
+        </ul>
     </nav>
-  </header>
 
-  <main>
-    <section class="hero">
-      <h1>Timile In Tifawt</h1>
-      <p>Une lumière d’espoir pour l’Azawad : éducation, santé, eau et dignité.</p>
-    </section>
+    <main>
+        <h2>Bienvenue sur le site</h2>
+        <p>Voici la page d'accueil du site Timile In Tifawt. Vous y trouverez nos dernières actualités et toutes les informations concernant notre association et ses actions.</p>
+    </main>
 
-    <section class="intro">
-      <h2>Bienvenue sur le site</h2>
-      <p>Il y a des images que le cœur ne peut oublier. Des regards éteints, des silences trop lourds, des vies brisées avant même d’avoir commencé.</p>
-      <p>Là-bas, en Azawad, un peuple pleure. Et même à distance, sa douleur nous atteint.</p>
-      <p>Ce n’est pas juste. Ce ne l’est jamais. Mais nous choisissons d’être solidaires.</p>
-      <p><strong>Timile In Tifawt</strong> est une lumière d’espoir : éducation, santé, eau, dignité.</p>
-      <p class="quote">À ceux qui tombent, que la paix les berce.</p>
-    </section>
-
-    <section class="social-icons">
-      <a href="https://www.facebook.com" target="_blank">
-        <img src="facebook-icon.png" alt="Facebook">
-      </a>
-      <a href="https://www.tiktok.com" target="_blank">
-        <img src="tiktok-icon.png" alt="TikTok">
-      </a>
-    </section>
-  </main>
-
-  <footer>
-    <p>&copy; 2025 Timile In Tifawt. Tous droits réservés.</p>
-  </footer>
-
-  <script>
-    const burger = document.getElementById('burger');
-    const navLinks = document.getElementById('nav-links');
-    burger.addEventListener('click', () => {
-      navLinks.classList.toggle('active');
-      burger.classList.toggle('toggle');
-    });
-  </script>
+    <footer>
+        <p>&copy; 2025 Timile In Tifawt. Tous droits réservés.</p>
+    </footer>
 </body>
 </html>
