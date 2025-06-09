@@ -1,105 +1,76 @@
 body {
-    margin: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: url('background.jpg') no-repeat center center fixed;
-    background-size: cover;
-    color: #fff;
-    text-align: center;
+  margin: 0;
+  font-family: 'Trebuchet MS', sans-serif;
+  background: url('background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #f8f8f8;
+  line-height: 1.6;
 }
 
 header {
-    background: rgba(0, 0, 0, 0.6);
-    padding: 10px;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 10px;
+  text-align: center;
 }
 
-.logo img {
-    max-width: 150px;
-    margin: 10px auto;
-    display: block;
-    animation: fadeIn 2s ease-in-out;
+header .logo {
+  width: 120px;
+  margin-bottom: 5px;
 }
 
 nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 10px 0;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  display: inline;
+  margin: 0 10px;
 }
 
 nav a {
-    color: #ffcc00;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s;
-}
-
-nav a:hover {
-    color: #fff;
+  color: #fdd835;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 main {
-    background: rgba(0, 0, 0, 0.5);
-    max-width: 800px;
-    margin: 30px auto;
-    padding: 20px;
-    border-radius: 10px;
+  max-width: 800px;
+  margin: 20px auto;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 10px;
 }
 
-h1 {
-    color: #ffcc00;
-    margin-bottom: 15px;
-    font-size: 2em;
-}
-
-p {
-    margin: 10px 0;
-    line-height: 1.6;
-}
-
-.socials {
-    margin: 20px auto;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-.socials img {
-    width: 40px;
-    height: 40px;
-    transition: transform 0.3s;
-}
-
-.socials img:hover {
-    transform: scale(1.2);
-}
-
-.desert-icon {
-    margin: 20px auto;
-    display: flex;
-    justify-content: center;
-}
-
-.desert-icon img {
-    width: 50px;
-    opacity: 0.8;
-    transition: opacity 0.3s;
-}
-
-.desert-icon img:hover {
-    opacity: 1;
+.welcome h1 {
+  color: #fdd835;
+  text-align: center;
+  margin-bottom: 15px;
 }
 
 footer {
-    background: rgba(0, 0, 0, 0.6);
-    padding: 10px;
-    font-size: 0.9em;
-    color: #ccc;
-    margin-top: 20px;
+  text-align: center;
+  padding: 15px;
+  background: rgba(0, 0, 0, 0.6);
 }
 
-@keyframes fadeIn {
-    from {opacity: 0;}
-    to {opacity: 1;}
+footer .social-icons {
+  margin: 10px 0;
+}
+
+footer .social-icons img {
+  width: 40px;
+  margin: 0 10px;
+  transition: transform 0.3s;
+}
+
+footer .social-icons img:hover {
+  transform: scale(1.2);
+}
+
+footer .camel img {
+  width: 50px;
+  margin: 10px auto;
+  display: block;
 }
