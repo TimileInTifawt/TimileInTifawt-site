@@ -3,48 +3,19 @@ body {
     font-family: Arial, sans-serif;
     color: #fff;
     background: url('background.jpg') center/cover no-repeat fixed;
-    background-size: cover;
     background-attachment: fixed;
-    position: relative;
-}
-
-body::before {
-    content: "";
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0,0,0,0.5);
-    z-index: 0;
-}
-
-header, main, footer {
-    position: relative;
-    z-index: 1;
 }
 
 header {
-    width: 100%;
-    padding: 20px;
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(0,0,0,0.5);
     text-align: center;
+    padding: 20px;
+    position: relative;
+    z-index: 2;
 }
 
 .logo-container img {
     max-height: 80px;
-    animation: logoFadeZoom 2s ease-in-out;
-}
-
-@keyframes logoFadeZoom {
-    0% {
-        opacity: 0;
-        transform: scale(0.8);
-    }
-    100% {
-        opacity: 1;
-        transform: scale(1);
-    }
 }
 
 nav ul {
@@ -69,34 +40,32 @@ nav a {
 
 main {
     max-width: 900px;
-    margin: 120px auto 20px auto;
+    margin: 20px auto;
     padding: 20px;
+}
+
+section {
+    background: rgba(0,0,0,0.6);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.4);
 }
 
 .hero {
     text-align: center;
-    padding: 60px 20px;
 }
 
-.hero-content h1 {
+.hero h1 {
     font-size: 3em;
     color: #FFD700;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     text-shadow: 2px 2px 5px #000;
 }
 
-.hero-content p {
+.hero p {
     font-size: 1.2em;
-    max-width: 600px;
-    margin: 0 auto;
     text-shadow: 1px 1px 3px #000;
-}
-
-.intro {
-    background-color: rgba(0,0,0,0.6);
-    padding: 20px;
-    margin-top: 20px;
-    border-radius: 8px;
 }
 
 .intro h2 {
@@ -110,14 +79,43 @@ main {
     margin-bottom: 10px;
 }
 
-footer {
-    background: rgba(0,0,0,0.7);
+.quote {
+    font-style: italic;
     text-align: center;
-    padding: 15px;
-    font-size: 0.9em;
+    color: #FFD700;
+    margin-top: 20px;
 }
 
-/* Menu Burger */
+.social-icons {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons img {
+    width: 50px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.social-icons a:hover {
+    transform: scale(1.1);
+}
+
+footer {
+    text-align: center;
+    background: rgba(0,0,0,0.7);
+    padding: 10px;
+    font-size: 0.9em;
+    position: relative;
+    z-index: 2;
+}
+
 .burger {
     display: none;
     flex-direction: column;
@@ -133,13 +131,12 @@ footer {
     transition: all 0.3s ease;
 }
 
-/* Responsive */
 @media (max-width: 768px) {
     nav ul {
         display: none;
         flex-direction: column;
         width: 100%;
-        background-color: rgba(0,0,0,0.9);
+        background: rgba(0,0,0,0.9);
     }
 
     nav ul.active {
@@ -167,12 +164,15 @@ footer {
         transform: rotate(-45deg) translate(5px, -5px);
     }
 
-    .hero-content h1 {
+    .hero h1 {
         font-size: 2em;
     }
 
-    .hero-content p {
+    .hero p {
         font-size: 1em;
-        padding: 0 10px;
+    }
+
+    .social-icons img {
+        width: 40px;
     }
 }
