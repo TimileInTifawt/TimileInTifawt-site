@@ -1,24 +1,27 @@
 body {
     font-family: Arial, sans-serif;
-    background: #fff4e6;
+    background: url('background.jpg') no-repeat center center fixed;
+    background-size: cover;
     margin: 0;
     padding: 0;
+    color: white;
 }
 
 header {
-    background: #c87f49;
+    background: rgba(200, 127, 73, 0.8);
     color: white;
     text-align: center;
     padding: 1rem;
 }
 
 header .logo {
-    max-width: 100px;
+    max-width: 120px;
     height: auto;
+    margin-bottom: 0.5rem;
 }
 
 nav {
-    background: #a64b2a;
+    background: rgba(166, 75, 42, 0.8);
     text-align: center;
     padding: 0.5rem;
 }
@@ -46,14 +49,78 @@ nav a:hover {
 
 main {
     padding: 1rem;
+    background: rgba(0, 0, 0, 0.5);
+    margin: 1rem auto;
+    max-width: 1000px;
+    border-radius: 8px;
+}
+
+h2 {
+    text-align: center;
+}
+
+.orange-title {
+    color: orange;
+}
+
+.blue-title {
+    color: lightblue;
+}
+
+.green-title {
+    color: lightgreen;
+}
+
+.article-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0.5rem auto;
+    border-radius: 8px;
 }
 
 footer {
-    background: #c87f49;
+    background: rgba(200, 127, 73, 0.8);
     color: white;
     text-align: center;
     padding: 1rem;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+}
+
+.social-icons {
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.camel-icon {
+    max-width: 80px;
+    height: auto;
+    display: block;
+    margin: 0 auto 0.5rem;
+    background: none;
+}
+
+.social-icons .icons img {
+    max-width: 40px;
+    height: auto;
+    margin: 0 10px;
+    transition: transform 0.2s;
+}
+
+.social-icons .icons img:hover {
+    transform: scale(1.1);
+}
+
+.return-home {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.return-home a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.return-home a:hover {
+    text-decoration: underline;
 }
