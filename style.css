@@ -1,92 +1,120 @@
+/* Réinitialisation de base */
 body {
+    margin: 0;
+    font-family: Arial, sans-serif;
     background: url('background.jpg') no-repeat center center fixed;
     background-size: cover;
-    font-family: Arial, sans-serif;
-    color: #ffffff;
-    margin: 0;
-    padding: 0;
+    color: white;
 }
 
+/* Header */
 header {
-    background: rgba(0, 0, 0, 0.6);
-    padding: 10px 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    text-align: center;
+    padding: 15px 0;
 }
 
-.logo-container img {
+header img.logo {
     width: 120px;
-    height: auto;
-    border-radius: 15px;
-    box-shadow: 0 0 15px rgba(0,0,0,0.6);
     margin-bottom: 10px;
 }
 
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
+nav {
     display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
     justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
 }
 
-nav ul li a {
+nav a {
     color: yellow;
     text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s;
+    padding: 8px 12px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.4);
+    transition: background-color 0.3s;
 }
 
-nav ul li a:hover {
-    color: orange;
+nav a:hover {
+    background-color: rgba(255, 255, 0, 0.5);
 }
 
+/* Main */
 main {
-    max-width: 800px;
+    background-color: rgba(0, 0, 0, 0.6);
     margin: 20px auto;
-    background: rgba(0, 0, 0, 0.6);
     padding: 20px;
     border-radius: 10px;
-    line-height: 1.6;
-    font-size: 1.1em;
+    max-width: 800px;
+    text-align: justify;
 }
 
-main h1 {
+h1 {
+    color: #ffd700;
     text-align: center;
-    color: #ffff33;
+    margin-bottom: 20px;
 }
 
-footer {
+p {
+    margin: 15px 0;
+}
+
+/* Camel icon centré */
+.camel-container {
     text-align: center;
-    padding: 10px;
-    background: rgba(0, 0, 0, 0.6);
-    font-size: 0.9em;
-    position: relative;
-}
-
-.social-icons {
-    margin-bottom: 10px;
-}
-
-.social-icons img {
-    width: 40px;
-    margin: 0 10px;
-    filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.6));
-    transition: transform 0.3s ease;
-}
-
-.social-icons img:hover {
-    transform: scale(1.1);
+    margin: 20px 0 10px 0;
 }
 
 .camel-icon {
-    position: fixed;
-    top: 10px;
-    right: 10px;
     width: 50px;
     height: auto;
+    opacity: 0.9;
+    transition: transform 0.3s;
+}
+
+.camel-icon:hover {
+    transform: scale(1.1);
     opacity: 1;
+}
+
+/* Réseaux sociaux */
+.social-icons {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.social-icons a img {
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+    transition: transform 0.3s;
+}
+
+.social-icons a img:hover {
+    transform: scale(1.2);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px 0;
+    font-size: 14px;
+}
+
+/* Ajustements responsifs */
+@media screen and (max-width: 600px) {
+    header img.logo {
+        width: 100px;
+    }
+
+    .social-icons a img,
+    .camel-icon {
+        width: 35px;
+    }
+
+    main {
+        padding: 15px;
+        margin: 10px;
+    }
 }
