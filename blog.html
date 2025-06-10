@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <title>Blog - Timile In Tifawt</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;600&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Dosis', sans-serif;
             font-size: 18px;
             background: url('background.jpg') no-repeat center center fixed;
             background-size: cover;
@@ -15,38 +16,30 @@
         }
 
         header {
-            background: rgba(200, 127, 73, 0.8);
+            background: rgba(200, 127, 73, 0.85);
             text-align: center;
             padding: 1rem;
         }
 
         header .logo {
-            max-width: 150px;
+            max-width: 180px;
             height: auto;
             margin-bottom: 0.5rem;
+            border-radius: 15px;
         }
 
         nav {
-            background: rgba(166, 75, 42, 0.8);
+            background: rgba(166, 75, 42, 0.85);
             text-align: center;
             padding: 0.5rem;
-        }
-
-        nav ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-
-        nav ul li {
-            display: inline;
-            margin: 0 10px;
+            font-size: 20px;
         }
 
         nav a {
             color: white;
             text-decoration: none;
-            font-weight: bold;
+            margin: 0 15px;
+            font-weight: 600;
         }
 
         nav a:hover {
@@ -55,10 +48,11 @@
 
         main {
             background: rgba(0, 0, 0, 0.6);
-            padding: 1rem;
-            margin: 1rem auto;
             max-width: 1000px;
-            border-radius: 8px;
+            margin: 2rem auto;
+            padding: 2rem;
+            border-radius: 10px;
+            line-height: 1.6;
         }
 
         h2 {
@@ -113,9 +107,10 @@
         }
 
         footer {
-            background: rgba(200, 127, 73, 0.8);
+            background: rgba(200, 127, 73, 0.85);
             text-align: center;
             padding: 1rem;
+            margin-top: 2rem;
         }
 
         .social-icons {
@@ -152,12 +147,10 @@
     </header>
 
     <nav>
-        <ul>
-            <li><a href="index.html">Accueil</a></li>
-            <li><a href="propos.html">À propos</a></li>
-            <li><a href="actualites.html">Actualités</a></li>
-            <li><a href="blog.html">Blog</a></li>
-        </ul>
+        <a href="index.html">Accueil</a>
+        <a href="propos.html">À propos</a>
+        <a href="actualites.html">Actualités</a>
+        <a href="blog.html">Blog</a>
     </nav>
 
     <main>
@@ -166,7 +159,6 @@
         <h3>Sommaire des articles :</h3>
         <ul>
             <li><a href="#resistance">Espoir et Résistance</a></li>
-            <!-- Ajouter d’autres articles ici -->
         </ul>
 
         <article id="resistance">
