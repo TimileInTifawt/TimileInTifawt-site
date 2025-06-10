@@ -56,7 +56,9 @@
       box-shadow: 0 0 20px rgba(255, 204, 0, 0.5);
     }
     .don-button {
-      display: inline-block;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
       background: linear-gradient(to right, #ffcc00, #e69b3a);
       color: black;
       text-decoration: none;
@@ -71,6 +73,10 @@
     .don-button:hover {
       background: linear-gradient(to right, #e69b3a, #ffcc00);
       transform: translateY(-2px);
+    }
+    .don-button .emoji {
+      font-size: 1.6rem;
+      margin-right: 0.5rem;
     }
     form {
       margin-top: 2rem;
@@ -169,7 +175,7 @@
     <img src="echange1.png" alt="Espace d'échange" class="exchange-image">
     <div>
       <a href="https://www.paypal.com/donate?hosted_button_id=YOUR_BUTTON_ID" class="don-button" target="_blank">
-        🐫 Soutenir nos actions
+        <span class="emoji">🐫</span> Soutenir nos actions
       </a>
     </div>
     <form action="mailto:timileintifawt@gmail.com" method="post" enctype="text/plain">
