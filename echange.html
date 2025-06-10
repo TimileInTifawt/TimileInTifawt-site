@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <title>Espace d'échange - Timile In Tifawt</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;600&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Dosis', sans-serif;
             font-size: 18px;
             background: url('background.jpg') no-repeat center center fixed;
             background-size: cover;
@@ -13,55 +14,40 @@
             padding: 0;
             color: white;
         }
-
         header {
-            background: rgba(200, 127, 73, 0.8);
+            background: rgba(200, 127, 73, 0.85);
             text-align: center;
             padding: 1rem;
         }
-
         header .logo {
-            max-width: 150px;
+            max-width: 180px;
             height: auto;
             margin-bottom: 0.5rem;
+            border-radius: 15px;
         }
-
         nav {
-            background: rgba(166, 75, 42, 0.8);
+            background: rgba(166, 75, 42, 0.85);
             text-align: center;
             padding: 0.5rem;
+            font-size: 20px;
         }
-
-        nav ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-
-        nav ul li {
-            display: inline;
-            margin: 0 10px;
-        }
-
         nav a {
             color: white;
             text-decoration: none;
-            font-weight: bold;
+            margin: 0 15px;
+            font-weight: 600;
         }
-
         nav a:hover {
             text-decoration: underline;
         }
-
         main {
             background: rgba(0, 0, 0, 0.6);
-            padding: 1rem;
-            margin: 1rem auto;
             max-width: 1000px;
-            border-radius: 8px;
+            margin: 2rem auto;
+            padding: 2rem;
+            border-radius: 10px;
             text-align: center;
         }
-
         .exchange-image {
             max-width: 90%;
             height: auto;
@@ -69,7 +55,6 @@
             margin-bottom: 1rem;
             box-shadow: 0 0 20px rgba(255, 204, 0, 0.5);
         }
-
         .don-button {
             display: inline-block;
             background: linear-gradient(to right, #ffcc00, #e69b3a);
@@ -81,31 +66,68 @@
             font-size: 1.1rem;
             box-shadow: 0 4px 8px rgba(200, 127, 73, 0.6);
             transition: background 0.3s, transform 0.2s;
+            margin-top: 1rem;
         }
-
         .don-button:hover {
             background: linear-gradient(to right, #e69b3a, #ffcc00);
             transform: translateY(-2px);
         }
-
+        form {
+            margin-top: 2rem;
+            text-align: left;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        label {
+            display: block;
+            margin-top: 1rem;
+            font-weight: bold;
+        }
+        input[type="text"],
+        textarea {
+            width: 100%;
+            padding: 0.5rem;
+            margin-top: 0.5rem;
+            border-radius: 8px;
+            border: none;
+            font-size: 16px;
+        }
+        input[type="submit"] {
+            background: #ffd700;
+            color: black;
+            font-weight: bold;
+            padding: 0.5rem 1.5rem;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            margin-top: 1rem;
+        }
+        input[type="submit"]:hover {
+            background: #ffcc00;
+        }
+        .notice {
+            font-size: 14px;
+            margin-top: 1rem;
+            text-align: center;
+            color: #ffd700;
+        }
         footer {
-            background: rgba(200, 127, 73, 0.8);
+            background: rgba(200, 127, 73, 0.85);
             text-align: center;
             padding: 1rem;
+            margin-top: 2rem;
         }
-
         .social-icons {
             text-align: center;
             margin: 1rem 0;
         }
-
         .camel-icon {
             max-width: 80px;
             height: auto;
             display: block;
             margin: 0 auto 0.5rem;
         }
-
         .social-icons .icons img {
             max-width: 60px;
             height: auto;
@@ -115,7 +137,6 @@
             padding: 5px;
             transition: transform 0.2s;
         }
-
         .social-icons .icons img:hover {
             transform: scale(1.1);
         }
@@ -126,24 +147,27 @@
         <img src="logo-timile.png" alt="Logo Timile In Tifawt" class="logo">
         <h1>Timile In Tifawt</h1>
     </header>
-
     <nav>
-        <ul>
-            <li><a href="index.html">Accueil</a></li>
-            <li><a href="propos.html">À propos</a></li>
-            <li><a href="actualites.html">Actualités</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="echange.html">Espace d'échange</a></li>
-        </ul>
+        <a href="index.html">Accueil</a>
+        <a href="propos.html">À propos</a>
+        <a href="actualites.html">Actualités</a>
+        <a href="blog.html">Blog</a>
+        <a href="echange.html">Espace d'échange</a>
     </nav>
-
     <main>
         <img src="echange1.png" alt="Espace d'échange" class="exchange-image">
         <div>
             <a href="https://www.paypal.com/donate?hosted_button_id=YOUR_BUTTON_ID" class="don-button" target="_blank">🤲 Faire un Don Libre</a>
         </div>
+        <form action="mailto:timileintifawt@gmail.com" method="post" enctype="text/plain">
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom" name="nom" required>
+            <label for="message">Message :</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            <input type="submit" value="Envoyer">
+        </form>
+        <p class="notice">Les commentaires sont soumis à validation avant publication.</p>
     </main>
-
     <footer>
         <div class="social-icons">
             <img src="camel-icon.png" alt="Camel icon" class="camel-icon">
