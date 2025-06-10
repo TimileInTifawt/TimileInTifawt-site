@@ -57,32 +57,20 @@
     }
     .don-button {
       display: inline-block;
+      background: linear-gradient(to right, #ffcc00, #e69b3a);
+      color: black;
       text-decoration: none;
-      border-radius: 50%;
-      background: radial-gradient(circle at center, #ffcc00, #e69b3a);
-      padding: 15px;
+      padding: 0.75rem 2rem;
+      border-radius: 30px;
+      font-weight: bold;
+      font-size: 1.2rem;
       box-shadow: 0 4px 8px rgba(200, 127, 73, 0.6);
-      transition: transform 0.3s, box-shadow 0.3s;
-    }
-    .don-button img {
-      max-width: 60px;
-      height: auto;
-      display: block;
+      transition: background 0.3s, transform 0.2s;
+      margin-top: 1.5rem;
     }
     .don-button:hover {
-      transform: scale(1.1);
-      box-shadow: 0 6px 12px rgba(200, 127, 73, 0.8);
-    }
-    .don-button-text {
-      display: block;
-      font-size: 16px;
-      color: black;
-      margin-top: 0.5rem;
-      font-weight: bold;
-      text-decoration: none;
-    }
-    .don-button-text:hover {
-      text-decoration: underline;
+      background: linear-gradient(to right, #e69b3a, #ffcc00);
+      transform: translateY(-2px);
     }
     form {
       margin-top: 2rem;
@@ -180,9 +168,8 @@
   <main>
     <img src="echange1.png" alt="Espace d'échange" class="exchange-image">
     <div>
-      <a href="https://www.paypal.com/donate?hosted_button_id=YOUR_BUTTON_ID" class="don-button" target="_blank" title="Soutenir nos actions">
-        <img src="camel-icon.png" alt="Soutenir nos actions">
-        <span class="don-button-text">🐫 Soutenir nos actions</span>
+      <a href="https://www.paypal.com/donate?hosted_button_id=YOUR_BUTTON_ID" class="don-button" target="_blank">
+        🐫 Soutenir nos actions
       </a>
     </div>
     <form action="mailto:timileintifawt@gmail.com" method="post" enctype="text/plain">
